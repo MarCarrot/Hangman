@@ -4,15 +4,12 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("hello");
-        WordCollection wordCollection = new WordCollection();
-        newGame(wordCollection);
+        newGame();
     }
 
-    private static void newGame(WordCollection wordCollection) {
-        Game game = new Game(wordCollection.getNewWord());
-        System.out.println(game.getWord());
-        game.printBoard();
+    private static void newGame() {
+        Game game = new Game();
+        game.playMatch();
     }
 
 }
